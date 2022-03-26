@@ -1,0 +1,41 @@
+.file-message {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  border: 1px solid @gray-common-level4;
+  overflow-wrap: break-word;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 8px;
+
+  & .anticon {
+    color: @primary-color;
+    font-size: 40px;
+  }
+
+  .file-info {
+    display: flex;
+    flex-direction: column;
+    max-width: calc(100% - 40px);
+    width: calc(100% - 40px);
+    margin-left: 8px;
+
+    .upload-progress {
+      display: flex;
+      align-items: center;
+
+      .anticon {
+        font-size: 12px;
+        margin-left: 10px;
+      }
+    }
+
+    &-uploaded {
+      .ant-typography {
+        display: inline;
+        font-size: 12px;
+        margin-right: 20px;
+      }
+    }
+  }
+}

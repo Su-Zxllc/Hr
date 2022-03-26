@@ -1,0 +1,36 @@
+.input-field-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px;
+    border-top: 1px solid @gray-common-level4;
+
+    .textarea {
+        border: none;
+    }
+
+    .ant-input:focus,
+    .ant-input:hover,
+    .ant-input-focused {
+        border: none;
+        box-shadow: none;
+    }
+
+    .ant-input[disabled] {
+        background-color: white;
+    }
+
+    .submit-container {
+        height: 40px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        margin-top: 5px;
+        margin-bottom: 10px;
+
+        .ant-btn {
+            padding: 2px 10px;
+            font-size: 12px;
+            border-radius: 4px;
+        }
+    }
+}

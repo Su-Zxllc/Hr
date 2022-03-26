@@ -1,0 +1,46 @@
+.header-container {
+    display: flex;
+    background: white;
+    height: 50px;
+    line-height: 50px;
+    user-select: none;
+    padding: 0;
+
+    .flex {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .header-lt {
+        height: 50px;
+        flex: 0 0 260px;
+        max-width: 260px;
+        min-width: 260px;
+        padding: 0 23px;
+        font-size: 24px;
+        color: @gray-common-level2;
+        justify-content: space-between;
+        border-right: 1px solid @gray-common-level4;
+
+        .icon-active {
+            color: @primary-color;
+        }
+    }
+
+    .header-rt {
+        height: 50px;
+        padding: 18px;
+
+        .ant-typography {
+            margin: 0 9px;
+            font-size: 18px;
+        }
+    }
+}
+
+.avatar-dropdown {
+    .ant-dropdown-menu {
+        border-radius: 6px;
+    }
+}
